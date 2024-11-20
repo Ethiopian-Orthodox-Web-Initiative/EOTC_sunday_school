@@ -1,34 +1,6 @@
-/* Tailwind's base, components, and utilities */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom properties for light and dark mode */
-:root {
-  --background-light: #ffffff;
-  --foreground-light: #171717;
-  
-  --background-dark: #0a0a0a;
-  --foreground-dark: #ededed;
-}
 
-/* Light mode defaults */
-body {
-  color: var(--foreground-light);
-  background: var(--background-light);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Dark mode styles using Tailwind's dark mode feature */
-@media (prefers-color-scheme: dark) {
-  body {
-    color: var(--foreground-dark);
-    background: var(--background-dark);
-  }
-}
-
-/* Tailwind Dark mode support: This can be used for dark mode toggle on the page */
-body.dark {
-  color: var(--foreground-dark);
-  background: var(--background-dark);
-}
